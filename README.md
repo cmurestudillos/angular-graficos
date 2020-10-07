@@ -4,7 +4,6 @@ Aplicacion web de graficos realizada con Angular y Material Design Bootstrap 4 u
 
 ## Instalar dependencias
 - Ejecutar en terminal comando: `npm install`.
-- Ejecutar en terminal comando: `npm install --save ng2-charts`.
 - Si da errores de compilacion, ejecutar `npm install --save chart.js`.
 
 ## Iniciar proyecto
