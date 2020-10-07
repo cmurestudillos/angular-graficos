@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { RadialChartOptions, ChartDataSets, ChartType } from 'chart.js';
-import { Label } from 'ng2-charts';
+import { Label, BaseChartDirective } from 'ng2-charts';
 
 @Component({
   selector: 'app-radar',
@@ -29,5 +29,20 @@ export class RadarComponent {
   public chartHovered({ event, active }: { event: MouseEvent, active: {}[] }): void {
     console.log(event, active);
   }
+
+  @ViewChild(BaseChartDirective, { static: true }) chart: BaseChartDirective;
+  
+  public randomize(): void {
+    for (let i = 0; i < this.radarChartData.length; i++) {
+      for (let j = 0; j < this.radarChartData[i].data.length; j++) {
+        this.radarChartData[i].data[j] = this.generateNumber(i);
+      }
+    }
+    this.chart.update();
+  }
+
+  private generateNumber(i: number) {
+    return Math.floor((Math.random() * (i < 2 ? 100 : 1000)) + 1);
+  }  
 
 }

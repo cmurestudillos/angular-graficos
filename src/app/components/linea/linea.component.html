@@ -4,7 +4,7 @@
     <div class="col-sm-6">
         <div>
             <canvas baseChart width="400" height="400" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
-            <button mat-button mat-raised-button class="btn btn-4 btn-block" (click)="randomize()">Aleatorio</button>
+            <button mat-button mat-raised-button class="btn btn-4 btn-block mx-auto w-25" (click)="randomize()">Aleatorio</button>
         </div>
     </div>
     <div class="col-sm-6">

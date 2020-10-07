@@ -1,7 +1,10 @@
+<h3 class="m-3"> Grafico de Radar</h3>
+<hr>
 <div>
     <div>
-        <div style="display: block">
+        <div class="div-barra">
             <canvas baseChart [datasets]="radarChartData" [options]="radarChartOptions" [labels]="radarChartLabels" [chartType]="radarChartType"></canvas>
         </div>
+        <button mat-button mat-raised-button class="btn btn-4 btn-block mx-auto w-25" (click)="randomize()">Aleatorio</button>
     </div>
 </div>

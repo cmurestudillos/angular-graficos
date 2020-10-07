@@ -1,8 +1,10 @@
+<h3 class="m-3"> Grafico de Donut</h3>
+<hr>
 <div>
     <div>
-        <div style="display: block">
+        <div class="div-barra">
             <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType"></canvas>
         </div>
-        <button mat-button mat-raised-button class="btn blue-gradient btn-block mt-2" (click)="randomize()">Aleatorio</button>
+        <button mat-button mat-raised-button class="btn btn-4 btn-block mx-auto w-25" (click)="randomize()">Aleatorio</button>
     </div>
 </div>
