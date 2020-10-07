@@ -1,6 +1,6 @@
-# AppGraficos
+# Graficos Angular
 
-Aplicacion web de graficos realizada con Angular y Material Design Bootstrap 4 utilizando [charts.js](https://www.chartjs.org/).
+Aplicacion web de graficos realizada con Angular, Material Design, Bootstrap utilizando [charts.js](https://www.chartjs.org/).
 
 ## Instalar dependencias
 - Ejecutar en terminal comando: `npm install`.
