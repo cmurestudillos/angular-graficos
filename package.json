@@ -1,6 +1,9 @@
 {
-  "name": "app-graficos",
+  "name": "graficos-angular",
   "version": "1.0.0",
+  "description": "SPA web con diferentes graficos de muestra.",
+  "author": "Carlos Mur",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
